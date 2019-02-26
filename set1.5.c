@@ -2,11 +2,11 @@
 #include<string.h>
 int main() 
 {
-    int n,i,res,b[20],integer=0;
+    int x,i,res,b[20],inte=0;
     char a[10];
     scanf("%s",a);
-    n=strlen(a);
-    for(i=0;i<n;i++)
+    x=strlen(a);
+    for(i=0;i<x;i++)
     {
     	if(a[i]=='I')
     	b[i]=1;
@@ -23,7 +23,7 @@ int main()
     	else
     	printf("INVALID");
     }
-    for(i=0;i<n;i=i+2)
+    for(i=0;i<x;i=i+2)
     {
     	if(b[i]<b[i+1])
     	{
@@ -33,8 +33,8 @@ int main()
         {
         	res=b[i]+b[i+1];
         }
-    integer=res+integer;
+    inte=res+inte;
     }
-    printf("%d",integer);
+    printf("%d",inte);
     return 0;
 }
